@@ -1,0 +1,14 @@
+.footer_style {
+  position: absolute;
+  bottom: 0;
+}
+.footer :hover {
+  color: #ff9f43;
+}
+.my-size-text {
+  font-size: 15px;
+}
+.my-footer {
+  font-size: 25px;
+  font-weight: bold;
+}

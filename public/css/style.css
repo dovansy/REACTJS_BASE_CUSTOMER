@@ -1,0 +1,152 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+
+.navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  position: relative;
+}
+
+.active {
+  color: #ffa043 !important;
+}
+.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 2.5px;
+  background-color: #ffa043;
+  left: 25%;
+  top: 80%;
+  /* transform: translate(50%, 50%); */
+}
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*
+menu for mobile
+*/
+
+#wrapper {
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+
+}
+
+.icon-menu{
+  display: none;
+}
+.icon {
+  color: #cccccc;
+  font-size: 28px;
+}
+.slide {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.line {
+  border-top: 2px solid orange;
+}
+.content {
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+#button {
+  background-color: #6fa8dc;
+  border-radius: 2em;
+  color: white;
+  font-weight: bold;
+}
+.button:hover {
+  transition: all ease 0.4;
+  transform: translateY(-1px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(122, 80, 80, 0.2);
+}
+.title > h4 {
+  position: relative;
+  padding-left: 20px;
+}
+.title > h4::before {
+  content: "\f053";
+  font-family: "fontAwesome";
+  position: absolute;
+  font-size: 18px;
+  left: 0px;
+  top: 8px;
+  color: #6fa8dc;
+}
+.title > h4 > a {
+  color: #6fa8dc;
+}
+footer {
+  width: 100%;
+  background-color: #333333;
+}
+footer h3 {
+  color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  .icon-menu {
+    display: block;
+  }
+  .navbar-nav > .nav-item {
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+  }
+  .navbar-collapse {
+    display: block;
+    justify-content: none;
+  }
+  .active::after {
+    content: "";
+    display: none;
+  }
+}
