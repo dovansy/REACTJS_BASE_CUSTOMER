@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "bootstrap": "^4.4.1",
     "js-cookie": "^2.2.1",
     "module-alias": "^2.2.2",
@@ -48,5 +49,9 @@
     "reactotron-redux": "^3.1.2",
     "reactotron-redux-saga": "^4.2.3",
     "redux-devtools-extension": "^2.13.8"
+  },
+  "_moduleAliases": {
+    "@src": "./src",
+    "@app": "./src/app"
   }
 }
